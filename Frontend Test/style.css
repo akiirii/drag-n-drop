@@ -1,0 +1,78 @@
+#div1, #div2, #test1, #test2 {
+    float: left;
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid black;
+}
+
+#drag21, #drag11{
+  border: 1px solid red;
+}
+#drag22, #drag12 {
+  border: 1px solid blue;
+}
+
+main {
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+}
+.container-drag, .container-drop {
+  margin: 50px;
+}
+.box {
+  border: 2px solid grey;
+  padding: 15px;
+  width: 250px;
+  position: relative;
+  flex: auto;
+  height: 300px;
+}
+
+span {
+  position: absolute;
+  color: grey;
+  z-index: -1;
+  padding: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+}
+
+img {
+  margin: 5px;
+  z-index: 99999999;
+  background-color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+button {
+  margin: 5px;
+  border: none;
+  text-transform: uppercase;
+  color: white;
+  background-color: #DCDCDC;
+}
+
+button.disable {
+  background-color: grey;
+}
+
+button.active {
+  background-color: #B0C4DE;
+}
+
+button:hover {
+  opacity: 0.75;
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <link href="style.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <main>
+      <div class="container-drag">
+        <span> You can take an element here </span>
+        <div class="box">
+          <img src="assets/error.png" draggable="true" class="drag">
+          <img src="assets/like.png" draggable="true" class="drag">
+          <img src="assets/network.png" draggable="true" class="drag">
+          <img src="assets/placeholder.png" draggable="true" class="drag">
+          <img src="assets/play-button.png" draggable="true" class="drag">
+          <img src="assets/smartphone.png" draggable="true" class="drag">
+          <img src="assets/star.png" draggable="true" class="drag">
+          <img src="assets/success.png" draggable="true" class="drag">
+          <img src="assets/user.png" draggable="true" class="drag">
+        </div>
+        <div class="buttons">
+          <button class="enable active">Enable</button>
+          <button class="disable">Disable</button>
+        </div>
+      </div>
+
+      <div class="container-drop" >
+        <span>You can drop an element here</span>
+
+        <div class="box drop"></div>
+        <div class="buttons">
+          <button class="enable active">Enable</button>
+          <button class="disable">Disable</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
